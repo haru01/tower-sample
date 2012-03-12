@@ -1,0 +1,73 @@
+{
+  "name":                 "app",
+  "version":              "0.0.1",
+  "description":          "",
+  "homepage":             "http://haru01.github.com/app",
+  "main":                 "./server.js",
+  "author":               "eiji.ienaga <eiji.ienaga@gmail.com>",
+  "keywords": [
+    "node"
+  ],
+  "maintainers": [{
+    "name":               "eiji.ienaga",
+    "email":              "eiji.ienaga@gmail.com"
+  }],
+  "contributors": [
+  
+  ],
+  "licenses": [
+    {
+      "type":             "MIT",
+      "url":              "http://mths.be/mit"
+    }
+  ],
+  "bugs": {
+    "url":                "https://github.com/haru01/app/issues"
+  },
+  "repository": {
+    "type":               "git",
+    "url":                "https://github.com/haru01/app.git"
+  },
+  "engines": {
+    "node":               ">= 0.4.0",
+    "npm":                "1"
+  },
+  "dependencies": {
+    "underscore":             ">= 0.0.1",
+    "underscore.string":      ">= 0.0.1",
+    "underscore.logger":      ">= 0.0.1",
+	"mongodb":                ">= 0.9.7-1.4",
+    "redis":                  ">= 0.7.1",
+    "coffee-resque":          ">= 0.1.4",
+    "coffee-script":          ">= 1.1.3",
+    "mint":                   ">= 0.3.0",
+    "tower":                  ">= 0.3.0",
+	"restler":                ">= 0.0.1",
+	"commander":              ">= 0.0.1",
+	"socket.io":              ">= 0.0.1",
+	"hook.io":                ">= 0.0.1",
+	"node-uuid":              ">= 0.0.1",
+	"useragent":              ">= 0.0.1",
+	"coffeekup":              ">= 0.0.1"
+  },
+  "devDependencies": {
+    "stylus":                 ">= 0.17.0",
+    "less":                   ">= 1.2.2",
+    "uglify-js":              ">= 1.1.1",
+    "pathfinder":             ">= 0.3.0",
+    "async":                  ">= 0.0.1",
+    "mocha":                  ">= 0.12.1",
+    "chai":                   ">= 0.3.3",
+    "sinon":                  ">= 1.3.1",
+    "design.io":              ">= 0.3.0",
+    "design.io-javascripts":  ">= 0.3.0",
+    "design.io-stylesheets":  ">= 0.3.0",
+    "knox":                   ">= 0.0.9",
+    "gzip":                   ">= 0.1.0",
+    "forever":                ">= 0.8.5"
+  },
+  "scripts": {
+    "test":                   "mocha $(find test -name \"*Test.coffee\") -r coffee-script $@",
+    "prepublish":             "npm prune; rm -rf node_modules/*/{test,example,bench}*"
+  }
+}
